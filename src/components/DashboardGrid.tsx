@@ -78,11 +78,11 @@ export default function DashboardGrid() {
 
   return (
     <section ref={sectionRef} className="lg:min-h-[calc(100vh-80px)] py-16 lg:py-20 bg-[#0b192f] relative overflow-hidden w-full flex lg:items-center">
-      {/* Background Video - Scaled up slightly to hide bottom-right watermark and cover entire viewport */}
+      {/* Background Video - Scaled up further to hide bottom-right watermark/symbol and cover entire viewport */}
       <video
         ref={videoRef}
         src={dragonVideo}
-        className="absolute inset-0 w-full h-full object-cover opacity-15 pointer-events-none mix-blend-screen z-0 scale-[1.08] origin-center"
+        className="absolute inset-0 w-full h-full object-cover opacity-70 brightness-150 contrast-125 pointer-events-none mix-blend-screen z-0 scale-[1.25] origin-top-left"
         muted
         playsInline
         onEnded={() => {

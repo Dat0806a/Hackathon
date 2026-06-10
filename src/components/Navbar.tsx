@@ -16,42 +16,40 @@ export default function Navbar({ activeTab, onTabChange }: NavbarProps) {
 
   return (
     <nav className="fixed top-0 right-0 left-0 z-40 bg-[#0b192f]/80 backdrop-blur-md border-b border-gray-800/50 shadow-[0_0_15px_rgba(255,85,64,0.02)] transition-all duration-300">
-      <div className="max-w-[1440px] mx-auto px-6 sm:px-12 md:px-16 lg:px-24 h-20 flex justify-between items-center">
-        <div className="flex items-center gap-8 lg:gap-16">
-          {/* Brand logo */}
-          <div 
-            onClick={() => handleTabClick('home')}
-            className="font-extrabold text-2xl sm:text-3xl text-red-500 tracking-tighter cursor-pointer hover:opacity-80 transition-opacity whitespace-nowrap"
-            id="navbar-logo"
-          >
-            ANDANAI
-          </div>
-
-          {/* Desktop Navigation Links */}
-          <div className="hidden lg:flex gap-6 xl:gap-8 text-sm font-semibold tracking-wide" id="navbar-links">
-            <button 
-              onClick={() => handleTabClick('home')}
-              className={`transition-colors cursor-pointer pb-1 whitespace-nowrap ${activeTab === 'home' ? 'text-red-500 border-b-2 border-red-500 font-bold' : 'text-gray-400 hover:text-white'}`}
-              id="nav-link-home"
-            >
-              Trang chủ
-            </button>
-            <button 
-              onClick={() => handleTabClick('ai-assistant')}
-              className={`transition-colors cursor-pointer pb-1 whitespace-nowrap ${activeTab === 'ai-assistant' ? 'text-red-500 border-b-2 border-red-500 font-bold' : 'text-gray-400 hover:text-white'}`}
-              id="nav-link-ai"
-            >
-              Trợ lý AI
-            </button>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors whitespace-nowrap" id="nav-link-lookup">Tra cứu thủ tục</a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors whitespace-nowrap" id="nav-link-prep">Chuẩn bị hồ sơ</a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors whitespace-nowrap" id="nav-link-pay">Thanh toán</a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors whitespace-nowrap" id="nav-link-profile">Hồ sơ cá nhân</a>
-          </div>
+      <div className="max-w-[1440px] mx-auto px-6 sm:px-12 md:px-16 lg:px-24 h-20 flex items-center justify-between gap-4">
+        {/* Brand logo */}
+        <div 
+          onClick={() => handleTabClick('home')}
+          className="font-extrabold text-2xl sm:text-3xl text-red-500 tracking-tighter cursor-pointer hover:opacity-80 transition-opacity whitespace-nowrap"
+          id="navbar-logo"
+        >
+          ANDANAI
         </div>
 
-        {/* Desktop Search & Status */}
-        <div className="hidden lg:flex items-center gap-6">
+        {/* Desktop Navigation Links */}
+        <div className="hidden lg:flex flex-1 justify-center gap-6 xl:gap-8 text-sm font-semibold tracking-wide" id="navbar-links">
+          <button 
+            onClick={() => handleTabClick('home')}
+            className={`transition-colors cursor-pointer pb-1 whitespace-nowrap ${activeTab === 'home' ? 'text-red-500 border-b-2 border-red-500 font-bold' : 'text-gray-400 hover:text-white'}`}
+            id="nav-link-home"
+          >
+            Trang chủ
+          </button>
+          <button 
+            onClick={() => handleTabClick('ai-assistant')}
+            className={`transition-colors cursor-pointer pb-1 whitespace-nowrap ${activeTab === 'ai-assistant' ? 'text-red-500 border-b-2 border-red-500 font-bold' : 'text-gray-400 hover:text-white'}`}
+            id="nav-link-ai"
+          >
+            Trợ lý AI
+          </button>
+          <a href="#" className="text-gray-400 hover:text-white transition-colors whitespace-nowrap" id="nav-link-lookup">Tra cứu thủ tục</a>
+          <a href="#" className="text-gray-400 hover:text-white transition-colors whitespace-nowrap" id="nav-link-prep">Chuẩn bị hồ sơ</a>
+          <a href="#" className="text-gray-400 hover:text-white transition-colors whitespace-nowrap" id="nav-link-pay">Thanh toán</a>
+          <a href="#" className="text-gray-400 hover:text-white transition-colors whitespace-nowrap" id="nav-link-profile">Hồ sơ cá nhân</a>
+        </div>
+
+        {/* Desktop Search & Status - Aligned far right */}
+        <div className="hidden lg:flex items-center gap-6 ml-auto">
           <div className="flex items-center bg-gray-850/50 border-b border-red-500/50 px-3 py-1.5 text-sm">
             <Search size={16} className="text-red-500 mr-2" />
             <input className="bg-transparent border-none focus:outline-none text-white text-xs placeholder:text-gray-500 w-36 xl:w-48" placeholder="Tìm kiếm hệ thống..." type="text"/>
