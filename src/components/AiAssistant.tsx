@@ -214,7 +214,7 @@ export default function AiAssistant() {
 
   return (
     <div 
-      className="flex w-full bg-[#0b192f] text-[#d6e3ff] min-h-[900px] border-t border-gray-800 relative z-10 font-[Montserrat,sans-serif]"
+      className="flex w-full bg-[#0b192f] text-[#d6e3ff] lg:h-[calc(100vh-80px)] lg:min-h-0 border-t border-gray-800 relative z-10 font-[Montserrat,sans-serif]"
       id="ai-assistant-container"
     >
       {/* Background cyber ambiance overlays matching high-fidelity dark concept */}
@@ -224,12 +224,12 @@ export default function AiAssistant() {
       </div>
 
       {/* CORE WEB CANVAS AREA */}
-      <main className="flex-1 min-h-[900px] flex flex-col relative z-10 bg-[#0b192f]/95 w-full" id="intelligence-dashboard">
+      <main className="flex-1 lg:h-full lg:min-h-0 flex flex-col relative z-10 bg-[#0b192f]/95 w-full" id="intelligence-dashboard">
         {/* Content Panel Area */}
-        <div className="max-w-[1440px] w-full mx-auto px-6 sm:px-12 md:px-16 lg:px-24 py-16 flex-1 flex flex-col lg:flex-row gap-8">
+        <div className="max-w-[1440px] w-full mx-auto px-6 sm:px-12 md:px-16 lg:px-24 py-6 md:py-8 lg:p-10 lg:h-full lg:min-h-0 flex-1 flex flex-col lg:flex-row gap-8 overflow-y-auto lg:overflow-hidden">
           {/* LEFT CHAT LAYOUT */}
-          <section className="flex-1 flex flex-col min-w-0" id="chat-section">
-            <div className="mb-8">
+          <section className="flex-1 flex flex-col min-w-0 lg:h-full" id="chat-section">
+            <div className="mb-4 lg:mb-6 shrink-0">
               <div className="flex items-center gap-3 bg-[#112036]/60 border-2 border-red-500/50 px-6 py-3.5 inline-flex shadow-[0_0_15px_rgba(255,0,0,0.15)] rounded-sm" id="ai-title-badge">
                 <span className="text-white font-bold uppercase tracking-widest text-lg leading-none">Trợ lý AI</span>
                 <span className="text-red-500/45 font-light text-lg leading-none">|</span>
@@ -247,7 +247,7 @@ export default function AiAssistant() {
             </div>
 
             {/* Chatbox mainframe styled after high contrast dark mockup */}
-            <div className="flex-1 flex flex-col bg-[#112036]/70 backdrop-blur-xl border border-red-500/30 shadow-2xl relative overflow-hidden" id="chat-block">
+            <div className="flex-1 flex flex-col bg-[#112036]/70 backdrop-blur-xl border border-red-500/30 shadow-2xl relative overflow-hidden min-h-0" id="chat-block">
               {/* Chat Header */}
               <div className="px-6 py-4 bg-[#112036] border-b border-red-500/20 flex justify-between items-center">
                 <div className="flex items-center gap-3">
@@ -267,7 +267,7 @@ export default function AiAssistant() {
               </div>
 
               {/* Chat Message Scroll Window */}
-              <div className="flex-1 p-8 space-y-8 overflow-y-auto max-h-[500px] scrollbar-thin" id="message-container">
+              <div className="flex-1 p-4 md:p-6 lg:p-8 space-y-6 md:space-y-8 overflow-y-auto min-h-0 scrollbar-thin" id="message-container">
                 {messages.map((msg) => (
                   <div 
                     key={msg.id} 
@@ -411,7 +411,7 @@ export default function AiAssistant() {
           </section>
 
           {/* RIGHT UTILITY & CORE SECURITY PANEL */}
-          <section className="w-full lg:w-[330px] flex flex-col gap-6" id="right-panel">
+          <section className="w-full lg:w-[330px] flex flex-col gap-4 lg:gap-6 shrink-0 lg:h-full lg:overflow-y-auto pr-1 pb-4" id="right-panel">
             {/* User credentials / Security clearance panel */}
             <div className="bg-[#112036]/50 backdrop-blur-md border border-red-500/20 p-6 relative overflow-hidden" id="clearance-card">
               <div className="absolute top-0 right-0 p-4 opacity-5 pointer-events-none">

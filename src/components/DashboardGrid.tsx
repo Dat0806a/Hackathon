@@ -77,7 +77,7 @@ export default function DashboardGrid() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-28 bg-[#0b192f] relative overflow-hidden w-full">
+    <section ref={sectionRef} className="py-16 sm:py-20 lg:py-24 bg-[#0b192f] relative overflow-hidden w-full">
       {/* Background Video - Scaled up slightly to hide bottom-right watermark */}
       <video
         ref={videoRef}
@@ -91,7 +91,7 @@ export default function DashboardGrid() {
       />
 
       <div className="max-w-[1440px] mx-auto px-6 sm:px-12 md:px-16 lg:px-24 relative z-10">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-14 lg:mb-16 gap-6">
           <div>
              <p className="text-sm text-yellow-600 uppercase tracking-[0.3em] mb-4 font-mono font-bold">Hệ Sinh Thái Số</p>
              <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white uppercase tracking-tight">TRỤ CỘT CỦA SỰ THỊNH VƯỢNG</h2>

@@ -10,7 +10,7 @@ export default function ProcessSection() {
   ];
 
   return (
-    <section className="relative py-28 bg-[#0b192f] overflow-hidden animate-[fadeIn_0.5s_ease-out] w-full">
+    <section className="relative py-16 sm:py-20 lg:py-24 bg-[#0b192f] overflow-hidden animate-[fadeIn_0.5s_ease-out] w-full">
       {/* Background Image with High-Fidelity Glow Overlays */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -23,7 +23,7 @@ export default function ProcessSection() {
 
       <div className="relative z-10 max-w-[1440px] mx-auto px-6 sm:px-12 md:px-16 lg:px-24">
         {/* Section Header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-10 md:mb-14 lg:mb-16">
           <span className="text-sm text-yellow-600 tracking-[0.4em] uppercase mb-4 block font-semibold font-mono">Hệ Thống Quản Trị Số</span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-6 uppercase tracking-tight shadow-sm">MÔ HÌNH HÀNH CHÍNH TƯƠNG LAI</h2>
           <div className="w-32 h-1.5 bg-red-500 mx-auto mb-8 shadow-[0_0_10px_#ff5540] rounded-full"></div>

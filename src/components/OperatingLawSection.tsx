@@ -2,7 +2,7 @@ import { CheckCircle } from 'lucide-react';
 
 export default function OperatingLawSection() {
   return (
-    <section className="bg-[#0b192f] py-28 w-full">
+    <section className="bg-[#0b192f] py-16 sm:py-20 lg:py-24 w-full">
       <div className="max-w-[1440px] mx-auto px-6 sm:px-12 md:px-16 lg:px-24 flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
         <div className="w-full lg:w-1/2 space-y-8">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">VẬN HÀNH THEO <span className="text-yellow-600">LUẬT SỐ HÓA</span></h2>

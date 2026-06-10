@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative min-h-[820px] w-full flex flex-col justify-start pt-44 pb-16 overflow-hidden bg-[#0b192f]">
+    <section className="relative min-h-0 lg:min-h-[calc(100vh-80px)] w-full flex flex-col justify-center pt-24 pb-12 sm:py-20 md:py-24 lg:py-16 overflow-hidden bg-[#0b192f]">
       <div className="absolute inset-0 z-0 cyber-grid">
         <img alt="" className="w-full h-full object-cover opacity-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpy6W1iomsPGGX2eNI1FPnOC6L8ObREZ4SMBWTrOBSziQSiRmB9UV1E5BaCkmhvWFoVTJ6jiOmICRYzxme42xvoQCByk4jjU7EvdUrA2DvqfNrz2LQ8C71qA2QJAxlgT_DVoYX934UCP3B_8mCB-2nfoksmeC9oprAzwTJqLGtFyJgLcsk3vhK-I0QlKxbInFumdjxOcwYv-75mkChH-r7kAD0tnpFJjtyRkptTTSIIkFlCl2FTB0MrCuiMSX1jJEusVLe_UIBDwM"/>
         <div className="absolute inset-0 bg-gradient-to-r from-[#0b192f] via-[#0b192f]/70 to-transparent"></div>
@@ -15,7 +15,7 @@ export default function Hero() {
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight tracking-tight uppercase">
               KIẾN TẠO <span className="text-red-500">CHÍNH PHỦ SỐ</span> TƯƠNG LAI
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-gray-400 mb-12 max-w-3xl border-l-4 border-yellow-600 pl-6 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-400 mb-6 md:mb-10 max-w-3xl border-l-4 border-yellow-600 pl-6 leading-relaxed">
               Nền tảng dịch vụ công thông minh tích hợp AI, định danh điện tử và hệ sinh thái hành chính minh bạch cho mọi công dân.
           </p>
           <div className="flex flex-wrap gap-4 sm:gap-6">
@@ -28,7 +28,7 @@ export default function Hero() {
           </div>
         </div>
         
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl">
+        <div className="mt-10 md:mt-16 lg:mt-20 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl">
             {[
                 { label: 'Công dân số', value: '98.4M+', color: 'bg-red-500', width: 'w-4/5' },
                 { label: 'Dịch vụ tích hợp', value: '3,200+', color: 'bg-yellow-600', width: 'w-2/3' },
