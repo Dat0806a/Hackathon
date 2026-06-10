@@ -77,7 +77,7 @@ export default function DashboardGrid() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="lg:h-[calc(100vh-80px)] lg:min-h-0 py-16 lg:py-0 bg-[#0b192f] relative overflow-hidden w-full flex lg:items-center">
+    <section ref={sectionRef} className="lg:min-h-[calc(100vh-80px)] py-16 lg:py-20 bg-[#0b192f] relative overflow-hidden w-full flex lg:items-center">
       {/* Background Video - Scaled up slightly to hide bottom-right watermark and cover entire viewport */}
       <video
         ref={videoRef}
